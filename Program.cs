@@ -44,9 +44,9 @@ namespace calculate_grade
         static double calculatepoints(int[] grades, int extrapoints, bool GPA)
         {
             double points = 0;
-            double[] pointlist = { 14, 11, 8, 5, 2, 0 };
-            double[] GPAlist = { 0, 0, 0, 0, 1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0, 4.0 };
-            double ResultGPA = 0;
+
+            int[] pointlist = { 14, 11, 8, 5, 2, 0 };
+
             for (int i = 0; i < grades.Length; i++)
             {
                 points += pointlist[grades[i] - 1];
